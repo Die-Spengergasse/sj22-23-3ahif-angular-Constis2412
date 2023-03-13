@@ -8,8 +8,9 @@ ul {
 li {
   float: left;
 }
-li a {
-  display: block;
+li a,
+.dropbtn {
+  display: inline-block;
   padding: 8px;
   color: white;
   text-decoration: none;
@@ -17,6 +18,23 @@ li a {
 }
 li a:hover {
   background-color: #5f1020;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ed1441;
+  z-index: 1;
+}
+.dropdown-content a {
+  text-align: left;
+  display: block;
+  text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 .About {
   float: right;
